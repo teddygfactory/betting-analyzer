@@ -1,5 +1,5 @@
 from http.server import BaseHTTPRequestHandler
-from betting_analyzer import BettingAnalyzer
+from betting.analyzer import BettingAnalyzer
 import json
 
 def handler(event, context):
@@ -18,8 +18,13 @@ def handler(event, context):
             })
         }
     except Exception as e:
+        print(f"Error in API handler: {str(e)}")  
         return {
             'statusCode': 500,
+            'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*'
+            },
             'body': json.dumps({
                 'error': str(e)
             })
