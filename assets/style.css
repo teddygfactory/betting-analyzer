@@ -1,0 +1,39 @@
+.dashboard-container {
+    padding: 20px;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    color: white;
+}
+
+.dashboard-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.dashboard-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.dashboard-section h2 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Table Styles */
+.dash-table-container {
+    margin-top: 10px;
+}
+
+.dash-spreadsheet {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Graph Styles */
+.js-plotly-plot {
+    margin-top: 10px;
+}
